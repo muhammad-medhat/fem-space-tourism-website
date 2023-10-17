@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/App.css";
+import { DesignSystem } from "./com/DesignSystem";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container bg-dark text-white">
+      {/* <!-- -----------------------------------------
+          CHALLENGES
+          Use the utility classess we created to: 
+            1. Hold the content in the middle of the page
+            2. Wrap the content in either a flex or grid 
+            3. Try changing the gap variable without modifying the original utlitiy class
+            4. Use the .sr-only class on a div and see what happens
+          ------------------------------------------ -->
+         */}
+      <h1 className="capitalize">react app</h1>
+      <DesignSystem />
     </div>
   );
 }
