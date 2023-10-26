@@ -18,7 +18,7 @@ export const MainNav = () => {
   return (
     <header className="primary-header flex justify-center align-center">
       <div>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="logo" />
       </div>
       <button
         class="mobile-nav-toggle"
@@ -48,7 +48,7 @@ export const MainNav = () => {
             <a
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               href="#">
-              <span>01</span>
+              <span aria-hidden="true">01</span>
               destination
             </a>
           </li>
@@ -56,7 +56,7 @@ export const MainNav = () => {
             <a
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               href="#">
-              <span>02</span>
+              <span aria-hidden="true">02</span>
               crew
             </a>
           </li>
@@ -64,7 +64,7 @@ export const MainNav = () => {
             <a
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               href="#">
-              <span>03</span>
+              <span aria-hidden="true">03</span>
               technology
             </a>
           </li>
