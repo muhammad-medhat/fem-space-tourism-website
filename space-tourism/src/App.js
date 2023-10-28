@@ -2,6 +2,11 @@ import "./css/App.css";
 import { DesignSystem } from "./com/DesignSystem";
 import { MainNav } from "./com/MainNav";
 import "./css/pages.css";
+import { Destination } from "./com/pages/Destination";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./com/pages/Home";
+import { Crew } from "./com/pages/Crew";
+import { Technology } from "./com/pages/Technology";
 
 function App() {
   return (
@@ -9,22 +14,18 @@ function App() {
       <a class="skip-to-content" href="#main">
         Skip to content
       </a>
-
-      <div className="home container bg-dark text-white">
-        {/* <!-- -----------------------------------------
-          CHALLENGES
-          Use the utility classess we created to: 
-            1. Hold the content in the middle of the page
-            2. Wrap the content in either a flex or grid 
-            3. Try changing the gap variable without modifying the original utlitiy class
-            4. Use the .sr-only class on a div and see what happens
-          ------------------------------------------ -->
-         */}
-        {/* <h1 className="capitalize">react app</h1> */}
+      {/* <Destination /> */}
+      {/* <div className="home container bg-dark text-white"> */}
+      <div>
         {/* <DesignSystem /> */}
         <MainNav />
-
-        <main id="main" className="grid-container grid-container--home ">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
+        </Routes>
+        {/* <main id="main" className="grid-container grid-container--home ">
           <div>
             <h1 className="ff-sans-cond fs-500 text-accent uppercase">
               So, you want to travel to{" "}
@@ -44,7 +45,7 @@ function App() {
               Explore
             </a>
           </div>
-        </main>
+        </main> */}
       </div>
     </>
   );

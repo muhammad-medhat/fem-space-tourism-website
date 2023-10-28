@@ -116,7 +116,9 @@
 .bg-white {
   background-color: hsl(var(--clr-white));
 }
-
+.bg-transparent {
+  background-color: transparent;
+}
 .text-dark {
   color: hsl(var(--clr-dark));
 }

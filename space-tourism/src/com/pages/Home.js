@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const Home = () => {
+  useEffect(() => {
+    document.body.classList = "home";
+  }, []);
   return (
-    <div className="home container bg-dark text-white">
+    <div className="container bg-dark-xxx text-white">
       <div className="grid-container grid-container--home ">
         <div>
           <h1 className="ff-sans-cond fs-500 text-accent uppercase">

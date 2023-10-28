@@ -1,4 +1,4 @@
-{
+const pages={
   "destinations": [
     {
       "name": "Moon",
@@ -106,3 +106,4 @@
     }
   ]
 }
+export default pages

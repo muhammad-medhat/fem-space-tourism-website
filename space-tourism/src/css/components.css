@@ -10,7 +10,10 @@
   place-items: center;
   padding: 0 2em;
   border-radius: 50%;
+  /* height: 300px;
+  width: 300px; */
   aspect-ratio: 1;
+
   text-decoration: none;
 }
 
@@ -181,5 +184,10 @@
 
   .primary-navigation {
     margin-block: 2rem;
+  }
+}
+@media (aspect-ratio: 1) {
+  .large-button {
+    background-color: red;
   }
 }

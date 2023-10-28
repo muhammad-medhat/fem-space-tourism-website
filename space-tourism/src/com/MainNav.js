@@ -4,6 +4,7 @@ import mobileNav from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
 import { StyledSpan } from "./styled/StyledSpan";
 import { StyledButton } from "./styled/StyledButton";
+import { Link } from "react-router-dom";
 
 export const MainNav = () => {
   const [visible, setVisible] = useState(false);
@@ -37,36 +38,36 @@ export const MainNav = () => {
           data-visible={visible}
           style={{ "--gap": "4rem" }}>
           <li className="active">
-            <a
+            <Link
               className=" uppercase letter-spacing-2 ff-sans-cond text-white"
-              href="#">
+              to="/">
               <span>00</span>
               home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              href="#">
+              to="/destination">
               <span aria-hidden="true">01</span>
               destination
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              href="#">
+              to="/crew">
               <span aria-hidden="true">02</span>
               crew
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              href="#">
+              to="/technology">
               <span aria-hidden="true">03</span>
               technology
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
