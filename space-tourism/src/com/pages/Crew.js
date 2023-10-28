@@ -7,9 +7,5 @@ export const Crew = ({ name }) => {
   console.log("crew", crew);
 
   useEffect(() => {}, []);
-  return (
-    <main id="main" class="grid-container grid-container--destination">
-      crew
-    </main>
-  );
+  return <main id="main" class="grid-container grid-container--crew"></main>;
 };
