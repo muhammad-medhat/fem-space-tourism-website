@@ -43,3 +43,6 @@ coverage
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+ignored
+space-tourism-website-figma
+starter-code
