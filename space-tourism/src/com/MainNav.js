@@ -2,18 +2,25 @@ import React, { useState } from "react";
 import logo from "../assets/shared/logo.svg";
 import mobileNav from "../assets/shared/icon-hamburger.svg";
 import closeIcon from "../assets/shared/icon-close.svg";
-import { StyledSpan } from "./styled/StyledSpan";
-import { StyledButton } from "./styled/StyledButton";
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
 
 export const MainNav = () => {
+  const [activeLink, setActiveLink] = useState("home");
+
   const [visible, setVisible] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const [icon, setIcon] = useState(mobileNav);
+
+  const loc = useLocation();
+  console.log("loc", loc);
   const mobileNavClicked = () => {
     setVisible(!visible);
     setExpanded(!expanded);
     setIcon(visible ? mobileNav : closeIcon);
+  };
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
   };
 
   return (
@@ -37,7 +44,9 @@ export const MainNav = () => {
           className="primary-navigation underline-indicators flex"
           data-visible={visible}
           style={{ "--gap": "4rem" }}>
-          <li className="active">
+          <li
+            onClick={() => onUpdateActiveLink("home")}
+            className={activeLink === "home" ? "active" : ""}>
             <Link
               className=" uppercase letter-spacing-2 ff-sans-cond text-white"
               to="/">
@@ -45,7 +54,9 @@ export const MainNav = () => {
               home
             </Link>
           </li>
-          <li>
+          <li
+            onClick={() => onUpdateActiveLink("destination")}
+            className={activeLink === "destination" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               to="/destination">
@@ -53,7 +64,9 @@ export const MainNav = () => {
               destination
             </Link>
           </li>
-          <li>
+          <li
+            onClick={() => onUpdateActiveLink("crew")}
+            className={activeLink === "crew" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               to="/crew">
@@ -61,7 +74,9 @@ export const MainNav = () => {
               crew
             </Link>
           </li>
-          <li>
+          <li
+            onClick={() => onUpdateActiveLink("technology")}
+            className={activeLink === "technology" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
               to="/technology">
