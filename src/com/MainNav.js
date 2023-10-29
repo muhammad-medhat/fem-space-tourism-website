@@ -59,7 +59,7 @@ export const MainNav = () => {
             className={activeLink === "destination" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              to="/destination">
+              to={`/destination`}>
               <span aria-hidden="true">01</span>
               destination
             </Link>
@@ -69,7 +69,7 @@ export const MainNav = () => {
             className={activeLink === "crew" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              to="/crew">
+              to={`/crew`}>
               <span aria-hidden="true">02</span>
               crew
             </Link>
@@ -79,7 +79,7 @@ export const MainNav = () => {
             className={activeLink === "technology" ? "active" : ""}>
             <Link
               className="uppercase letter-spacing-2 ff-sans-cond text-white"
-              to="/technology">
+              to={`/technology`}>
               <span aria-hidden="true">03</span>
               technology
             </Link>
