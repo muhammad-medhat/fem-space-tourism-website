@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fem-space-tourism-website/static/css/main.7b24e955.css",
-    "main.js": "/fem-space-tourism-website/static/js/main.86ea3374.js",
+    "main.css": "/fem-space-tourism-website/static/css/main.e299de92.css",
+    "main.js": "/fem-space-tourism-website/static/js/main.cde2b2d1.js",
     "static/media/background-home-desktop.jpg": "/fem-space-tourism-website/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-destination-desktop.jpg": "/fem-space-tourism-website/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
     "static/media/background-home-tablet.jpg": "/fem-space-tourism-website/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/fem-space-tourism-website/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/fem-space-tourism-website/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/fem-space-tourism-website/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.7b24e955.css.map": "/fem-space-tourism-website/static/css/main.7b24e955.css.map",
-    "main.86ea3374.js.map": "/fem-space-tourism-website/static/js/main.86ea3374.js.map"
+    "main.e299de92.css.map": "/fem-space-tourism-website/static/css/main.e299de92.css.map",
+    "main.cde2b2d1.js.map": "/fem-space-tourism-website/static/js/main.cde2b2d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b24e955.css",
-    "static/js/main.86ea3374.js"
+    "static/css/main.e299de92.css",
+    "static/js/main.cde2b2d1.js"
   ]
 }
